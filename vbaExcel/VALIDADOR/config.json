@@ -1,0 +1,1542 @@
+{
+    "driver": "SQL Server",
+    "server": "VWCP-ASPLANDB/SQLEXPRESS",
+    "login": "",
+    "password": "",
+    "trustedConnection": "true",
+    "database": "impAmbulatorial",
+    "files": [
+        {
+            "name": "agendadasBhz",
+            "tableName": "tbImpAgendadasBhz",
+            "unique": "true",
+            "sourcePath": "S:/03-PAINEIS/05-AMBULATORIAL/02-BASES/",
+            "sourceType": "xlsx",
+            "targetPath": "//vwcp-asplandb/temp/",
+            "targetType": "txt",
+            "fields": [
+                {
+                    "name": "CENTRAL",
+                    "fieldName": "central",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "false",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "FICHA",
+                    "fieldName": "ficha",
+                    "fieldType": "varchar",
+                    "fieldSize": "13",
+                    "fieldNull": "false",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SOLICITACAO",
+                    "fieldName": "solicitacao",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "false",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "ESPECIALIDADE",
+                    "fieldName": "especialidade",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "false",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "ORIGEM",
+                    "fieldName": "origem",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "false",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SOLICITANTE",
+                    "fieldName": "solicitante",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "false",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "EXECUTANTE",
+                    "fieldName": "executante",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "false",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "MEDICO",
+                    "fieldName": "medico",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "false",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "DATA_AGENDA",
+                    "fieldName": "dataAgenda",
+                    "fieldType": "Date",
+                    "fieldSize": "10",
+                    "fieldNull": "false",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "HORA_AGENDA",
+                    "fieldName": "horaAgenda",
+                    "fieldType": "Time",
+                    "fieldSize": "5",
+                    "fieldNull": "false",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "DATA_RETORNO_OBRIGATORIO",
+                    "fieldName": "dataRetornoObrigatorio",
+                    "fieldType": "Date",
+                    "fieldSize": "10",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "TIPO_BUSCA",
+                    "fieldName": "tipoBusca",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "false",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SITUACAO_ATUAL",
+                    "fieldName": "situacaoAtual",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "false",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "MEDICO_REQUERIDO",
+                    "fieldName": "medicoRequerido",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "UNIDADE_REQUERIDA",
+                    "fieldName": "unidadeRequerida",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "TIPO_MARCACAO",
+                    "fieldName": "tipoMarcacao",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "false",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "PROCEDENCIA_PACIENTE",
+                    "fieldName": "procedencia",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "false",
+                    "fieldOnly": ""
+                }
+            ]
+        },
+        {
+            "name": "agendadasInt",
+            "tableName": "tbImpAgendadasInt",
+            "unique": "true",
+            "sourcePath": "S:/03-PAINEIS/05-AMBULATORIAL/02-BASES/",
+            "sourceType": "xlsx",
+            "targetPath": "//vwcp-asplandb/temp/",
+            "targetType": "txt",
+            "fields": [
+                {
+                    "name": "CENTRAL",
+                    "fieldName": "central",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "false",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "FICHA",
+                    "fieldName": "ficha",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SOLICITACAO",
+                    "fieldName": "solicitacao",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "ESPECIALIDADE",
+                    "fieldName": "especialidade",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "ORIGEM",
+                    "fieldName": "origem",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SOLICITANTE",
+                    "fieldName": "solicitante",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "EXECUTANTE",
+                    "fieldName": "executante",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "MEDICO",
+                    "fieldName": "medico",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "DATA_AGENDA",
+                    "fieldName": "dataAgenda",
+                    "fieldType": "Date",
+                    "fieldSize": "10",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "HORA_AGENDA",
+                    "fieldName": "horaAgenda",
+                    "fieldType": "Time",
+                    "fieldSize": "10",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "DATA_RETORNO_OBRIGATORIO",
+                    "fieldName": "dataRetornoObrigatorio",
+                    "fieldType": "Date",
+                    "fieldSize": "5",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SITUACAO_ATUAL",
+                    "fieldName": "situacaoAtual",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "MEDICO_REQUERIDO",
+                    "fieldName": "medicoRequerido",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "UNIDADE_REQUERIDA",
+                    "fieldName": "unidadeRequerida",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "TIPO_BUSCA",
+                    "fieldName": "tipoBusca",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "TIPO_MARCACAO",
+                    "fieldName": "tipoMarcacao",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "PROCEDENCIA_PACIENTE",
+                    "fieldName": "procedencia",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                }
+            ]
+        },
+        {
+            "name": "baixadasBhz",
+            "tableName": "tbImpBaixadasBhz",
+            "unique": "true",
+            "sourcePath": "S:/03-PAINEIS/05-AMBULATORIAL/02-BASES/",
+            "sourceType": "xlsx",
+            "targetPath": "//vwcp-asplandb/temp/",
+            "targetType": "txt",
+            "fields": [
+                {
+                    "name": "CENTRAL",
+                    "fieldName": "central",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "false",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "FICHA",
+                    "fieldName": "ficha",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SOLICITACAO",
+                    "fieldName": "solicitacao",
+                    "fieldType": "Date",
+                    "fieldSize": "10",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "ESPECIALIDADE",
+                    "fieldName": "especialidade",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "ORIGEM",
+                    "fieldName": "origem",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SOLICITANTE",
+                    "fieldName": "solicitante",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "EXECUTANTE",
+                    "fieldName": "executante",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "MEDICO",
+                    "fieldName": "medico",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "DATA_AGENDA",
+                    "fieldName": "dataAgenda",
+                    "fieldType": "Date",
+                    "fieldSize": "10",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "HORA_AGENDA",
+                    "fieldName": "horaAgenda",
+                    "fieldType": "Time",
+                    "fieldSize": "5",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "TIPO_BUSCA",
+                    "fieldName": "tipoBusca",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "TIPO_MARCACAO",
+                    "fieldName": "tipoMarcacao",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "PROCEDENCIA_PACIENTE",
+                    "fieldName": "procedencia",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SITUACAO_ATUAL",
+                    "fieldName": "situacaoAtual",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "MEDICO_REQUERIDO",
+                    "fieldName": "medicoRequerido",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "UNIDADE_REQUERIDA",
+                    "fieldName": "unidadeRequerida",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "DATA_RETORNO_OBRIGATORIO",
+                    "fieldName": "dataRetornoObrigatorio",
+                    "fieldType": "Date",
+                    "fieldSize": "10",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "TIPO_OFERTA",
+                    "fieldName": "tipoOferta",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "FLAG_REALIZACAO",
+                    "fieldName": "flagRealizacao",
+                    "fieldType": "bit",
+                    "fieldSize": "1",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "FLAG_BAIXA_SISTEMA",
+                    "fieldName": "flagBaixaSistema",
+                    "fieldType": "bit",
+                    "fieldSize": "1",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "MOTIVO_AUSENCIA",
+                    "fieldName": "motivoAusencia",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                }
+            ]
+        },
+        {
+            "name": "baixadasInt",
+            "tableName": "tbImpBaixadasInt",
+            "unique": "true",
+            "sourcePath": "S:/03-PAINEIS/05-AMBULATORIAL/02-BASES/",
+            "sourceType": "xlsx",
+            "targetPath": "//vwcp-asplandb/temp/",
+            "targetType": "txt",
+            "fields": [
+                {
+                    "name": "CENTRAL",
+                    "fieldName": "central",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "false",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "FICHA",
+                    "fieldName": "ficha",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SOLICITACAO",
+                    "fieldName": "solicitacao",
+                    "fieldType": "Date",
+                    "fieldSize": "10",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "ESPECIALIDADE",
+                    "fieldName": "especialidade",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "ORIGEM",
+                    "fieldName": "origem",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SOLICITANTE",
+                    "fieldName": "solicitante",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "EXECUTANTE",
+                    "fieldName": "executante",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "MEDICO",
+                    "fieldName": "medico",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "DATA_AGENDA",
+                    "fieldName": "dataAgenda",
+                    "fieldType": "Date",
+                    "fieldSize": "10",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "HORA_AGENDA",
+                    "fieldName": "horaAgenda",
+                    "fieldType": "Time",
+                    "fieldSize": "5",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "TIPO_BUSCA",
+                    "fieldName": "tipoBusca",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SITUACAO_ATUAL",
+                    "fieldName": "situacaoAtual",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "TIPO_MARCACAO",
+                    "fieldName": "tipoMarcacao",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "PROCEDENCIA_PACIENTE",
+                    "fieldName": "procedencia",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "MEDICO_REQUERIDO",
+                    "fieldName": "medicoRequerido",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "UNIDADE_REQUERIDA",
+                    "fieldName": "unidadeRequerida",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "DATA_RETORNO_OBRIGATORIO",
+                    "fieldName": "dataRetornoObrigatorio",
+                    "fieldType": "Date",
+                    "fieldSize": "10",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "TIPO_OFERTA",
+                    "fieldName": "tipoOferta",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "FLAG_REALIZACAO",
+                    "fieldName": "flagRealizacao",
+                    "fieldType": "bit",
+                    "fieldSize": "1",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "FLAG_BAIXA_SISTEMA",
+                    "fieldName": "flagBaixaSistema",
+                    "fieldType": "bit",
+                    "fieldSize": "1",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "MOTIVO_AUSENCIA",
+                    "fieldName": "motivoAusencia",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                }
+            ]
+        },
+        {
+            "name": "canceladasBhz",
+            "tableName": "tbImpCanceladasBhz",
+            "unique": "true",
+            "sourcePath": "S:/03-PAINEIS/05-AMBULATORIAL/02-BASES/",
+            "sourceType": "xlsx",
+            "targetPath": "//vwcp-asplandb/temp/",
+            "targetType": "txt",
+            "fields": [
+                {
+                    "name": "CENTRAL",
+                    "fieldName": "central",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "false",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SOLICITANTE",
+                    "fieldName": "solicitante",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "FICHA",
+                    "fieldName": "ficha",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "ESPECIALIDADE",
+                    "fieldName": "especialidade",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SOLICITACAO",
+                    "fieldName": "solicitacao",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "MUNICIPIO",
+                    "fieldName": "municipio",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "TIPO_BUSCA",
+                    "fieldName": "tipoBusca",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "TIPO_MARCACAO",
+                    "fieldName": "tipoMarcacao",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SITUACAO",
+                    "fieldName": "situacao",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "DATA_RETORNO_OBRIGATORIO",
+                    "fieldName": "dataRetornoObrigatorio",
+                    "fieldType": "Date",
+                    "fieldSize": "10",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "UNIDADE_REQUERIDA",
+                    "fieldName": "unidadeRequerida",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "MEDICO_REQUERIDO",
+                    "fieldName": "medicoRequerido",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                }
+            ]
+        },
+        {
+            "name": "canceladasInt",
+            "tableName": "tbImpCanceladasInt",
+            "unique": "true",
+            "sourcePath": "S:/03-PAINEIS/05-AMBULATORIAL/02-BASES/",
+            "sourceType": "xlsx",
+            "targetPath": "//vwcp-asplandb/temp/",
+            "targetType": "txt",
+            "fields": [
+                {
+                    "name": "CENTRAL",
+                    "fieldName": "central",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "false",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SOLICITANTE",
+                    "fieldName": "solicitante",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "FICHA",
+                    "fieldName": "ficha",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "ESPECIALIDADE",
+                    "fieldName": "especialidade",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SOLICITACAO",
+                    "fieldName": "solicitacao",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "MUNICIPIO",
+                    "fieldName": "municipio",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "TIPO_BUSCA",
+                    "fieldName": "tipoBusca",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "TIPO_MARCACAO",
+                    "fieldName": "tipoMarcacao",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SITUACAO",
+                    "fieldName": "situacao",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "DATA_RETORNO_OBRIGATORIO",
+                    "fieldName": "dataRetornoObrigatorio",
+                    "fieldType": "Date",
+                    "fieldSize": "10",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "UNIDADE_REQUERIDA",
+                    "fieldName": "unidadeRequerida",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "MEDICO_REQUERIDO",
+                    "fieldName": "medicoRequerido",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                }
+            ]
+        },
+        {
+            "name": "desmarcadas",
+            "tableName": "tbImpDesmarcadas",
+            "unique": "true",
+            "sourcePath": "S:/03-PAINEIS/05-AMBULATORIAL/02-BASES/",
+            "sourceType": "xlsx",
+            "targetPath": "//vwcp-asplandb/temp/",
+            "targetType": "txt",
+            "fields": [
+                {
+                    "name": "DATA",
+                    "fieldName": "data",
+                    "fieldType": "Date",
+                    "fieldSize": "10",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "HORA",
+                    "fieldName": "hora",
+                    "fieldType": "Time",
+                    "fieldSize": "5",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "EXECUTANTE",
+                    "fieldName": "executante",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "MEDICO",
+                    "fieldName": "medico",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "CENTRAL",
+                    "fieldName": "central",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "false",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "DS_ESPEC_CONS",
+                    "fieldName": "especialidade",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "TIPO_AGENDA",
+                    "fieldName": "tipoAgenda",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "TIPO_NAO_MARCACAO",
+                    "fieldName": "tipoNaoMarcacao",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "MOTIVO_IMPED_PROF",
+                    "fieldName": "motivoImpedProf",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "MOTIVO_IMPED_UNID_CENT",
+                    "fieldName": "motivoImpedUnidCent",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                }
+            ]
+        },
+        {
+            "name": "desprezadasBhz",
+            "tableName": "tbImpDesprezadasBhz",
+            "unique": "true",
+            "sourcePath": "S:/03-PAINEIS/05-AMBULATORIAL/02-BASES/",
+            "sourceType": "xlsx",
+            "targetPath": "//vwcp-asplandb/temp/",
+            "targetType": "txt",
+            "fields": [
+                {
+                    "name": "CENTRAL",
+                    "fieldName": "central",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "false",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SOLICITANTE",
+                    "fieldName": "solicitante",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "FICHA",
+                    "fieldName": "ficha",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "ESPECIALIDADE",
+                    "fieldName": "especialidade",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SOLICITACAO",
+                    "fieldName": "solicitacao",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "MUNICIPIO",
+                    "fieldName": "municipio",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "TIPO_BUSCA",
+                    "fieldName": "tipoBusca",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "TIPO_MARCACAO",
+                    "fieldName": "tipoMarcacao",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SITUACAO",
+                    "fieldName": "situacao",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "DATA_RETORNO_OBRIGATORIO",
+                    "fieldName": "dataRetornoObrigatorio",
+                    "fieldType": "Date",
+                    "fieldSize": "10",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "UNIDADE_REQUERIDA",
+                    "fieldName": "unidadeRequerida",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "MEDICO_REQUERIDO",
+                    "fieldName": "medicoRequerido",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                }
+            ]
+        },
+        {
+            "name": "desprezadasInt",
+            "tableName": "tbImpDesprezadasInt",
+            "unique": "true",
+            "sourcePath": "S:/03-PAINEIS/05-AMBULATORIAL/02-BASES/",
+            "sourceType": "xlsx",
+            "targetPath": "//vwcp-asplandb/temp/",
+            "targetType": "txt",
+            "fields": [
+                {
+                    "name": "CENTRAL",
+                    "fieldName": "central",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "false",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SOLICITANTE",
+                    "fieldName": "solicitante",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "FICHA",
+                    "fieldName": "ficha",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "ESPECIALIDADE",
+                    "fieldName": "especialidade",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SOLICITACAO",
+                    "fieldName": "solicitacao",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "MUNICIPIO",
+                    "fieldName": "municipio",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "TIPO_BUSCA",
+                    "fieldName": "tipoBusca",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "TIPO_MARCACAO",
+                    "fieldName": "tipoMarcacao",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SITUACAO",
+                    "fieldName": "situacao",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "DATA_RETORNO_OBRIGATORIO",
+                    "fieldName": "dataRetornoObrigatorio",
+                    "fieldType": "Date",
+                    "fieldSize": "10",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "UNIDADE_REQUERIDA",
+                    "fieldName": "unidadeRequerida",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "MEDICO_REQUERIDO",
+                    "fieldName": "medicoRequerido",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                }
+            ]
+        },
+        {
+            "name": "ofertadas",
+            "tableName": "tbImpOfertadas",
+            "unique": "true",
+            "sourcePath": "S:/03-PAINEIS/05-AMBULATORIAL/02-BASES/",
+            "sourceType": "xlsx",
+            "targetPath": "//vwcp-asplandb/temp/",
+            "targetType": "txt",
+            "fields": [
+                {
+                    "name": "CENTRAL",
+                    "fieldName": "central",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "false",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "ESPECIALIDADE",
+                    "fieldName": "especialidade",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "PRESTADOR",
+                    "fieldName": "executante",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "MEDICO",
+                    "fieldName": "medico",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "DATA_AGENDA",
+                    "fieldName": "dataAgenda",
+                    "fieldType": "Date",
+                    "fieldSize": "10",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "TIPO",
+                    "fieldName": "tipoMarcacao",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "HORA_AGENDA",
+                    "fieldName": "horaAgenda",
+                    "fieldType": "Time",
+                    "fieldSize": "5",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                }
+            ]
+        },
+        {
+            "name": "solicitadasBhz",
+            "tableName": "tbImpSolicitadasBhz",
+            "unique": "true",
+            "sourcePath": "S:/03-PAINEIS/05-AMBULATORIAL/02-BASES/",
+            "sourceType": "xlsx",
+            "targetPath": "//vwcp-asplandb/temp/",
+            "targetType": "txt",
+            "fields": [
+                {
+                    "name": "CENTRAL",
+                    "fieldName": "central",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "false",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "FICHA",
+                    "fieldName": "ficha",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SOLICITACAO",
+                    "fieldName": "solicitacao",
+                    "fieldType": "date",
+                    "fieldSize": "8",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "ESPECIALIDADE",
+                    "fieldName": "especialidade",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "CANCELAMENTO",
+                    "fieldName": "dataCancelamento",
+                    "fieldType": "date",
+                    "fieldSize": "8",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "ORIGEM",
+                    "fieldName": "origem",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SOLICITANTE",
+                    "fieldName": "solicitante",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "DATA_SOLICITACAO",
+                    "fieldName": "dataSolicitacao",
+                    "fieldType": "date",
+                    "fieldSize": "10",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "DATA_RETORNO_OBRIG",
+                    "fieldName": "dataRetorno",
+                    "fieldType": "date",
+                    "fieldSize": "8",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "UNIDADE_REQUERIDA",
+                    "fieldName": "unidadeRequerida",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "MEDICO_REQUERIDO",
+                    "fieldName": "medicoRequerido",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "CPF_MEDICO_SOLICITANTE",
+                    "fieldName": "cpfMedicoSolicitante",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "NOME_MEDICO_SOLICITANTE",
+                    "fieldName": "nomeMedicoSolicitante",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "TIPO_BUSCA",
+                    "fieldName": "tipoBusca",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SITUACAO_ATUAL",
+                    "fieldName": "situacaoAtual",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "TIPO_MARCACAO",
+                    "fieldName": "tipoMarcacao",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "PROCEDENCIA_PACIENTE",
+                    "fieldName": "procedencia",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                }
+            ]
+        },
+        {
+            "name": "solicitadasInt",
+            "tableName": "tbImpSolicitadasInt",
+            "unique": "true",
+            "sourcePath": "S:/03-PAINEIS/05-AMBULATORIAL/02-BASES/",
+            "sourceType": "xlsx",
+            "targetPath": "//vwcp-asplandb/temp/",
+            "targetType": "txt",
+            "fields": [
+                {
+                    "name": "CENTRAL",
+                    "fieldName": "central",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "false",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "FICHA",
+                    "fieldName": "ficha",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SOLICITACAO",
+                    "fieldName": "solicitacao",
+                    "fieldType": "date",
+                    "fieldSize": "8",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "ESPECIALIDADE",
+                    "fieldName": "especialidade",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "CANCELAMENTO",
+                    "fieldName": "dataCancelamento",
+                    "fieldType": "date",
+                    "fieldSize": "8",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "ORIGEM",
+                    "fieldName": "origem",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SOLICITANTE",
+                    "fieldName": "solicitante",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "DATA_SOLICITACAO",
+                    "fieldName": "dataSolicitacao",
+                    "fieldType": "date",
+                    "fieldSize": "10",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "DATA_RETORNO_OBRIG",
+                    "fieldName": "dataRetorno",
+                    "fieldType": "date",
+                    "fieldSize": "8",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "UNIDADE_REQUERIDA",
+                    "fieldName": "unidadeRequerida",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "MEDICO_REQUERIDO",
+                    "fieldName": "medicoRequerido",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "CPF_MEDICO_SOLICITANTE",
+                    "fieldName": "cpfMedicoSolicitante",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "NOME_MEDICO_SOLICITANTE",
+                    "fieldName": "nomeMedicoSolicitante",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "TIPO_BUSCA",
+                    "fieldName": "tipoBusca",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "SITUACAO_ATUAL",
+                    "fieldName": "situacaoAtual",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "TIPO_MARCACAO",
+                    "fieldName": "tipoMarcacao",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                },
+                {
+                    "name": "PROCEDENCIA_PACIENTE",
+                    "fieldName": "procedencia",
+                    "fieldType": "varchar",
+                    "fieldSize": "255",
+                    "fieldNull": "true",
+                    "fieldOnly": ""
+                }
+            ]
+        }
+    ]
+}
